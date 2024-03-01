@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigations"
+    app:startDestination="@id/homefragment">
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="Fragments.homefragment"
+        android:label="fragment_homefragment"
+        tools:layout="@layout/fragment_homefragment" />
+    <fragment
+        android:id="@+id/spin"
+        android:name="Fragments.spin"
+        android:label="fragment_spin"
+        tools:layout="@layout/fragment_spin" />
+    <fragment
+        android:id="@+id/history"
+        android:name="Fragments.History"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/user"
+        android:name="Fragments.user"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+</navigation>

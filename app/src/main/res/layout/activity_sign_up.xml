@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_1"
+    tools:context=".Sign_Up">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign Up"
+        android:textColor="@color/blacktext"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Your Name"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:textColorHint="#776D6D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="352sp"
+        android:layout_height="52sp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Age"
+        android:inputType="text"
+        android:paddingLeft="15sp"
+        android:textColorHint="#776D6D"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="352sp"
+        android:layout_height="52sp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="15sp"
+        android:textColorHint="#776D6D"
+        app:layout_constraintEnd_toEndOf="@+id/age"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="352sp"
+        android:layout_height="52sp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edittextbackground"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingLeft="15sp"
+        android:textColorHint="#776D6D"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FAFAFA"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Sign up"
+        android:textColor="@color/blacktext"
+        android:textSize="18sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
